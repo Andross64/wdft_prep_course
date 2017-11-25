@@ -9,9 +9,10 @@ console.log ("Hello World");
 Exercise #2
 Using the loop provided for you below, use the array push method to insert the numbers 1 to 10 into the array.
 */
-
-for(var i=0;i<10;i++){
+var myArray = [];
+for(var i=1;i<=10;i++){
     //use the array push() method here.
+    myArray.push(i);
 }
 
 
@@ -19,8 +20,8 @@ for(var i=0;i<10;i++){
 Exercise #3
 Test that you used the array push method correctly by console logging the first item in the array. Console log the last item in the array afterwards.
 */
-console.log();
-console.log();
+console.log(myArray[0]);
+console.log(myArray[9]);
 
 
 /*
@@ -28,6 +29,9 @@ Exercise #5
 Create an empty object and assign it to the variable car below.
 Give the car object a property called "colour" and assign it the value of "black". Test that your code works correctly by outputting the "colour" property to the console. You should see the value "black" printed out.
 */
-var car;
+var car = {
+    colour:"black",
+}
 
+console.log(car.colour);
 
